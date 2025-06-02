@@ -88,7 +88,7 @@ public class CrateUtils {
 
     @SuppressWarnings("UnstableApiUsage")
     public static boolean isSupportedParticle(@NotNull Particle particle) {
-        return particle != Particle.VIBRATION && particle != Particle.DUST_COLOR_TRANSITION && particle != Particle.TRAIL;
+        return particle != Particle.VIBRATION && particle != Particle.DUST_COLOR_TRANSITION;
     }
 
     public static boolean isSupportedParticleData(@NotNull UniParticle particle) {
@@ -97,6 +97,6 @@ public class CrateUtils {
 
     @SuppressWarnings("UnstableApiUsage")
     public static boolean isSupportedParticleData(@NotNull Class<?> clazz) {
-        return clazz != Void.class && clazz != Vibration.class && clazz != Particle.DustTransition.class && clazz != Particle.Trail.class;
+        return clazz != Void.class && clazz != Vibration.class && clazz != Particle.DustTransition.class;
     }
 }
